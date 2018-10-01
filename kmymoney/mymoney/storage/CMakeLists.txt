@@ -18,6 +18,7 @@ set(storage_a_SOURCES
 # This library is actually not needed. It is built just for
 # convenience, and then linked into kmm_mymoney.
 kde4_add_library( kmm_storage STATIC ${storage_a_SOURCES} )
+target_link_libraries( kmm_storage ${LIBALKIMIA_LIBRARIES} )
 
 ########### install files ###############
 

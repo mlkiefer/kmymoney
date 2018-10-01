@@ -94,7 +94,7 @@ KEquityPriceUpdateDlg::KEquityPriceUpdateDlg(QWidget *parent, const QString& sec
   //
 
   // send in securityId == "XXX YYY" to get a single-shot update for XXX to YYY.
-  // for consistency reasons, this accepts the same delimiters as WebPriceQuote::launch()
+  // for consistency reasons, this accepts the same delimiters as AlkOnlineQuote::launch()
   QRegExp splitrx("([0-9a-z\\.]+)[^a-z0-9]+([0-9a-z\\.]+)", Qt::CaseInsensitive);
   MyMoneySecurityPair currencyIds;
   if (splitrx.indexIn(securityId) != -1) {
